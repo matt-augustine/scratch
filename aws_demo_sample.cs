@@ -23,7 +23,7 @@ public class Player : PlayFabData<Player, UInt64>
         // region from which it was loaded.
         player.Update();
         
-        // Creates a player record in the default store and region
+        // Creates a player record in the default store and region.
         var newPlayer = Player.Create(new Player()
         {
             UserId= 7329,
