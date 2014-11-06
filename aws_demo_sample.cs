@@ -1,5 +1,7 @@
-[Amazon.DynamoDBv2.DataModel.DynamoDBTable("Player")]
-[DataStoreConfig(WriteStore = DataStore.DynamoDB, ReadStoreOrder = new[] { DataStore.DynamoDB, DataStore.SimpleDB }, WriteRegion = "us-west-2", ReadRegionOrder = new[] { "us-west-2", "us-west-1" })]
+[DataStoreConfig( WriteStore = DataStore.DynamoDB, 
+                  ReadStoreOrder = new[] { DataStore.DynamoDB, DataStore.SimpleDB }, 
+                  WriteRegion = "us-west-2", 
+                  ReadRegionOrder = new[] { "us-west-2", "us-west-1" })]
 public class Player : SimpleDBSerializable<Player, UInt64>
 {
     [Amazon.DynamoDBv2.DataModel.DynamoDBHashKey]
