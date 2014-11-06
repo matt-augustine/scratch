@@ -4,7 +4,7 @@
     WriteRegion =       "us-west-2", 
     ReadRegionOrder =   new[] { "us-west-2", "us-west-1" }
                                                                        )]
-public class Player : SimpleDBSerializable<Player, UInt64>
+public class Player : PlayFabData<Player, UInt64>
 {
     [Amazon.DynamoDBv2.DataModel.DynamoDBHashKey]
     public UInt64   UberId { get; set; }
