@@ -15,7 +15,7 @@ public class Player : PlayFabData<Player, UInt64>
     static void Sample()
     {
         // Returns the first matching player record, searching
-        // DynamoDB and SimpleDB in both regions.
+        // DynamoDB and SimpleDB in both regions in the specified order.
         var player = Player.Get(1234, false);
         player.LastLogin = DateTime.UtcNow;
         
